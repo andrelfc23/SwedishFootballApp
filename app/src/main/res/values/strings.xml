@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Football Frenzy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="new_register_account">Create a new account</string>
+    <string name="liverpool">LiverPool</string>
+    <string name="barca">Barca</string>
+    <string name="welcome_title_string">Welcome to Franzy Football</string>
+    <string name="leauge_table"> Leauge Table</string>
+    <string name="upcoming_matches"> Upcoming matches</string>
+    <string name="home">Home</string>
+    <string name="enter_phone">Enter phone</string>
+    <string name="logout">Logout</string>
+    <string name="groupChat">groupChat</string>
+    <string name="allsvenskar">Allsvenskan, den svenska högsta fotbollsligan, startade 1924.
+        Ligan har genomgått många förändringar under åren och har haft stor påverkan på svensk fotboll.
+        Det är en av de mest prestigefyllda ligorna i Sverige och har producerat många talangfulla spelare. </string>
+    <string name="Antallag">Allsvenskan består för närvarande av 16 lag. Dessa lag spelar varje år mot varandra i en serie där varje lag möter alla andra lag både hemma och borta.
+    Varje säsong spelar lagen 30 matcher, och laget som samlar flest poäng efter alla matcher vinner ligan.</string>
+    <string name="toptrelag">1. Malmö FF – 21 titlar\n2. IFK Göteborg – 18 titlar\n3. AIK – 12 titlar\n\nMalmö FF är den mest framgångsrika klubben i Allsvenskan genom tiderna, med hela 21 titlar.
+    IFK Göteborg, en annan historisk klubb, har vunnit 18 gånger och AIK har tagit hem 12.</string>
+    <string name="mestlagmal">AIK har gjort flest mål i Allsvenskan genom tiderna, med över 3500 mål. Klubben är känd för sin offensiva spelstil och har genom åren producerat många framstående målskyttar.</string>
+    <string name="mestmalskytten">1. Gunnar Nordahl – 149 mål\n2. Henrik Larsson – 130 mål\n3. Johan Elmander – 112 mål\n\nGunnar Nordahl är den bästa målskytten genom tiderna i Allsvenskan.
+    Henrik Larsson och Johan Elmander har också varit framstående spelare.</string>
+    <string name="playmaker">1. Rasmus Elm – 80 assist\n2. Anders Svensson – 70 assist\n3. Kim Källström – 65 assist\n\nRasmus Elm har flest assist i Allsvenskan.
+    Han har haft en fantastisk karriär både i Sverige och internationellt.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

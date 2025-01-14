@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/groupChatFragment">
+
+    <fragment
+        android:id="@+id/groupChatFragment"
+        android:name="com.abav.footballfranzy.home.GroupChatFragment"
+        android:label="GroupChatFragment" />
+    <fragment
+        android:id="@+id/mainHomeFragment2"
+        android:name="com.abav.footballfranzy.home.MainHomeFragment"
+        android:label="MainHomeFragment" />
+</navigation>
