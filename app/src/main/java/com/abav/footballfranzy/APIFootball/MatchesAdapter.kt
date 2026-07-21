@@ -57,6 +57,7 @@ class MatchesAdapter : ListAdapter<Event, MatchesAdapter.MatchViewHolder>(MatchD
             binding.leagueName.text = event.league.name
 
             // Ladda logotyper
+            //Används för att ladda bilder från nätet
             Glide.with(binding.homeTeamLogo.context)
                 .load(event.homeTeam.logo)
                 .into(binding.homeTeamLogo)

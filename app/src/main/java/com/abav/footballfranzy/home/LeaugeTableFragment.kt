@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 
+import com.abav.footballfranzy.BuildConfig
 import com.abav.footballfranzy.R
 import com.abav.footballfranzy.databinding.FragmentLeaugeTableBinding
 import com.abav.footballfranzy.model.ResponseLeagueTable
@@ -60,10 +61,14 @@ class LeaugeTableFragment : Fragment() {
 
     private fun fetchLeagueStandings() {
 
+        android.util.Log.d("LEAGUE_DEBUG", "API Key used: '${BuildConfig.EVERYSPORT_API_KEY}'")
+
         val apiService = RetrofitClient.api
-        apiService.getLeagueStandings(87302, "26192887ec48f76ab54167238ae16688")
+        apiService.getLeagueStandings(87302, BuildConfig.EVERYSPORT_API_KEY)
             .enqueue(object : Callback<ResponseLeagueTable> {
                 override fun onResponse(call: Call<ResponseLeagueTable>, response: Response<ResponseLeagueTable>) {
+                    android.util.Log.d("LEAGUE_DEBUG", "Code: ${response.code()}, Body: ${response.body()}")
+
                     if (response.isSuccessful) {
 
                         val leagueResponse = response.body()
@@ -89,6 +94,7 @@ class LeaugeTableFragment : Fragment() {
                 }
 
                 override fun onFailure(call: Call<ResponseLeagueTable>, t: Throwable) {
+                    android.util.Log.e("LEAGUE_DEBUG", "Failure: ${t.message}", t)
                     Toast.makeText(context, "Failed: ${t.message}", Toast.LENGTH_SHORT).show()
                 }
             })

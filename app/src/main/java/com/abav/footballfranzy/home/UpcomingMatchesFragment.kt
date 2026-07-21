@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.abav.footballfranzy.BuildConfig
 import com.abav.footballfranzy.databinding.FragmentUpcomingMatchesBinding
 
 
@@ -98,7 +99,7 @@ class UpcomingMatchesFragment : Fragment() {
 
 
         // Hämta data från API:t
-        viewModel.fetchUpcomingMatches()
+        viewModel.fetchUpcomingMatches(BuildConfig.EVERYSPORT_API_KEY)
 
         return binding.root
     }

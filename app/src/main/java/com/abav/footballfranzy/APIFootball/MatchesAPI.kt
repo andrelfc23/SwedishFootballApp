@@ -17,6 +17,8 @@ interface MatchesAPI {
         @Query("apikey") apiKey: String
     ): Call<ResponseLeagueTable>
 
-    @GET("events?apikey=26192887ec48f76ab54167238ae16688")
-    suspend fun getUpcomingMatches(): Response<MatchesResponse>
+    @GET("events")
+    suspend fun getUpcomingMatches(
+        @Query("apikey") apiKey: String
+    ): Response<MatchesResponse>
 }

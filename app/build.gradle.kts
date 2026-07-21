@@ -1,8 +1,18 @@
+import java.util.Properties
+import java.io.FileInputStream
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.gms.google-services")
     id ("kotlin-parcelize") // Add this line
+}
+
+// Läser in nycklar/hemligheter från local.properties (checkas aldrig in i git)
+val localProperties = Properties()
+val localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    localProperties.load(FileInputStream(localPropertiesFile))
 }
 
 android {
@@ -17,6 +27,12 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField(
+            "String",
+            "EVERYSPORT_API_KEY",
+            "\"${localProperties.getProperty("EVERYSPORT_API_KEY", "")}\""
+        )
     }
 
     buildTypes {
@@ -36,11 +52,12 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
-
         viewBinding = true
-
+        buildConfig = true
     }
 }
+
+
 
 dependencies {
 

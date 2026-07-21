@@ -29,7 +29,7 @@ class MainHomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         FirebaseApp.initializeApp(this)
-        setContentView(R.layout.activity_main_home)
+
 
         binding = ActivityMainHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)

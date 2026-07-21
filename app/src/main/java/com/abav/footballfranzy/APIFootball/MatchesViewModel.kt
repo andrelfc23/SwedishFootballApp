@@ -12,11 +12,11 @@ class MatchesViewModel(private val repository: MatchesRepository) : ViewModel() 
     private val _matchesLiveData = MutableLiveData<List<Event>>()
     val matchesLiveData: LiveData<List<Event>> get() = _matchesLiveData
 
-    fun fetchUpcomingMatches() {
+    fun fetchUpcomingMatches(apiKey: String) {
         if (_matchesLiveData.value.isNullOrEmpty()) {
             viewModelScope.launch {
                 try {
-                    val matches = repository.getUpcomingMatches()
+                    val matches = repository.getUpcomingMatches(apiKey)
                     _matchesLiveData.postValue(matches ?: emptyList())
                 } catch (e: Exception) {
                     e.printStackTrace()
