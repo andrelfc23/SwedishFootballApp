@@ -84,31 +84,8 @@ Displays a brief splash screen when the app launches, before routing the user to
 - **`MatchesResponse.kt`, `Event.kt`, `Team.kt`, `League.kt`, `Arena.kt`** – Data models (mapped to the Everysport API's JSON responses) representing a match, a team, a league, and an arena respectively.
 - **`ResponseLeagueTable.kt`** (in `model/`) – Data model for the response from the league table endpoint.
 
-## Getting Started
 
-### Prerequisites
-- Android Studio (latest stable version)
-- JDK 8+
-- A Firebase project
-- An API key from [Everysport](https://api.everysport.com/)
 
-### 1. Clone the project
-```
-git clone <repo-url>
-```
-
-### 2. Add Firebase configuration
-Create your own Firebase project at [console.firebase.google.com](https://console.firebase.google.com/), enable **Authentication** and **Firestore**, then download your own `google-services.json` and place it in the `app/` folder.
-
-### 3. Add your API key
-Create/open `local.properties` in the project root and add:
-```
-EVERYSPORT_API_KEY=your_own_key_here
-```
-The key is read via `BuildConfig.EVERYSPORT_API_KEY` and is never committed to git (`local.properties` is in `.gitignore`).
-
-### 4. Build and run
-Open the project in Android Studio, let Gradle sync, and run it on an emulator or physical device.
 
 ## Security
 API keys and Firebase configuration are kept out of the source code via `local.properties` and `.gitignore`. Make sure never to commit these files if you fork or contribute to the project.
