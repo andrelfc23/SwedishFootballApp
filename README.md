@@ -112,3 +112,20 @@ Open the project in Android Studio, let Gradle sync, and run it on an emulator o
 
 ## Security
 API keys and Firebase configuration are kept out of the source code via `local.properties` and `.gitignore`. Make sure never to commit these files if you fork or contribute to the project.
+
+## Screenshots
+
+| Feature | File |
+|---|---|
+| Login | `Skärmbild 2026-07-23 010942.png` |
+| Register | `Skärmbild 2026-07-23 011104.png` |
+| League Table | `Skärmbild 2026-07-23 011422.png` |
+| Matches | `Skärmbild 2026-07-23 011445.png` |
+| Chat | `Skärmbild 2026-07-23 011508.png` |
+
+![Login](Skärmbild%202026-07-23%20010942.png)
+![Register](Skärmbild%202026-07-23%20011104.png)
+![League Table](Skärmbild%202026-07-23%20011422.png)
+![Matches](Skärmbild%202026-07-23%20011445.png)
+![Chat](Skärmbild%202026-07-23%20011508.png)
+
